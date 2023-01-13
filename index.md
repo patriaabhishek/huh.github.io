@@ -52,7 +52,7 @@ layout: home
 
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for words.." title="Type in a word">
 
-<table id="Word Map">
+<table id="myTable">
   <tr class="header">
     <th style="width:25%;">Hinglish</th>
     <th style="width:25%;">Urdu</th>
