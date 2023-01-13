@@ -48,47 +48,30 @@ layout: home
 
 <body>
 
-<h2>My Customers</h2>
+<h2>Hinglish-Urdu-Hindi Dictionary</h2>
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for words.." title="Type in a word">
 
-<table id="myTable">
+<table id="Word Map">
   <tr class="header">
-    <th style="width:60%;">Name</th>
-    <th style="width:40%;">Country</th>
+    <th style="width:25%;">Hinglish</th>
+    <th style="width:25%;">Urdu</th>
+    <th style="width:50%;">Hindi</th>
+    <th>
   </tr>
   <tr>
     <td>Alfreds Futterkiste</td>
     <td>Germany</td>
   </tr>
+
+{% for member in site.data.dictionary %}
   <tr>
-    <td>Berglunds snabbkop</td>
-    <td>Sweden</td>
+    <td>{{ member.HINGLISH }}</td>
+    <td>{{ member.URDU }}</td>
+    <td>{{ member.HINDI }}</td>
   </tr>
-  <tr>
-    <td>Island Trading</td>
-    <td>UK</td>
-  </tr>
-  <tr>
-    <td>Koniglich Essen</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Laughing Bacchus Winecellars</td>
-    <td>Canada</td>
-  </tr>
-  <tr>
-    <td>Magazzini Alimentari Riuniti</td>
-    <td>Italy</td>
-  </tr>
-  <tr>
-    <td>North/South</td>
-    <td>UK</td>
-  </tr>
-  <tr>
-    <td>Paris specialites</td>
-    <td>France</td>
-  </tr>
+{% endfor %}
+
 </table>
 
 <script>
