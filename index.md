@@ -57,11 +57,6 @@ layout: home
     <th style="width:25%;">Hinglish</th>
     <th style="width:25%;">Urdu</th>
     <th style="width:50%;">Hindi</th>
-    <th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Germany</td>
   </tr>
 
 {% for member in site.data.dictionary %}
